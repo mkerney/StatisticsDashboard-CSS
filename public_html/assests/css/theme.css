@@ -1,0 +1,704 @@
+/*==============================================================================
+********************  font styles for the application **************************
+==============================================================================*/
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue/HelveticaNeue.eot'); 
+    src: url('../fonts/HelveticaNeue/HelveticaNeue.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/HelveticaNeue/HelveticaNeue.woff') format('woff'),
+        url('../fonts/HelveticaNeue/HelveticaNeue.ttf')  format('truetype'),
+        url('../fonts/HelveticaNeue/HelveticaNeue.svg#svgFontName') format('svg'); 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "HelveticaNeue",sans-serif;
+}
+/*-- clear fix styles starts --*/
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* ie 6/7 */
+}
+/*-- clear fix styles ends --*/
+
+/*==============================================================================
+**      Top Header Styles Starts   
+==============================================================================*/
+.header-wrapper{
+    background-color: #222222;
+}
+.navbar-brand{
+    color: #999999;
+    outline: medium none;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: inline-block;
+    width: 260px;
+}
+.toggle{
+    display: none;
+
+}
+.toggle-bar {
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    width: 20px;
+    margin-top: 4px;
+}
+.toggle .toggle-bar:first-of-type{
+    margin-top: 0;
+}
+.navbar-right{
+    float: right;
+    width: auto;
+}
+.navbar-right ul{
+    display: none;
+}
+.navbar-right .open ul{
+    list-style: outside none none;
+    width: 140px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: none;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    border-radius: 0 0 5px 5px;
+    top: 50px;
+    box-shadow: 0 0 5px 0 #808080;
+    z-index: 9999;
+}
+.navbar-right .open li a{
+    color: #333;
+    display:block;
+    font-size: 14px;
+    outline: medium none;
+    padding: 10px 20px 0;
+    text-decoration: none;
+}
+.navbar-right a span{
+    font-size: 13px;
+    margin-left: 5px;
+}
+.navbar-right .open> a{
+    background-color: #000;
+    color: #fff;
+}
+.email-wrapper,.notification-wrapper,.profile-wrapper{
+    display: inline-block;
+    position: relative;
+}
+.email-wrapper > a,.notification-wrapper > a,.profile-wrapper > a{
+    text-decoration: none;
+    outline: none;
+    padding: 15px 10px;
+    display: inline-block;
+    color: #999999;
+}
+.drop-down{
+    font-size: 13px;
+    margin-left: 4px;
+}
+.navbar-right .open.notification-wrapper ul{
+    width: 205px;
+    border-radius: 0 0 5px 5px;
+}
+.navbar-right .open .notification-list a {
+    font-size: 13px;
+    padding: 6px 0 6px 20px;
+}
+.navbar-right .alert{
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 3px 6px;
+}
+.navbar-right .alert-gray{
+    background-color: #777777;
+}
+.navbar-right .alert-primary{
+    background-color: #337AB7;
+}
+.navbar-right .alert-success{
+    background-color: #5CB85C;
+}
+.navbar-right .alert-info{
+    background-color: #5BC0DE;
+}
+.navbar-right .alert-warning{
+    background-color: #F0AD4E;
+}
+.navbar-right .alert-danger{
+    background-color: #D9534F;
+}
+.navbar-right .open.email-wrapper ul{
+    width: 280px;
+    height: 250px;
+    overflow-y: scroll;
+    border-radius: 0 0 0 5px;
+}
+.navbar-right .open.email-wrapper h4{
+    margin: 0;
+}
+.navbar-right .open.email-wrapper img{
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+
+}
+.navbar-right .open.email-wrapper small{
+    color: #808080;
+    display: block;
+    margin-top: 5px;
+}
+.navbar-right .open.email-wrapper p{
+    font-size: 13px;
+    padding-top: 10px;
+}
+.navbar-right .open.email-wrapper li a{
+    padding: 20px 10px 15px 85px;
+}
+.navbar-right .open li:last-child{
+    border-top: 1px solid rgba(0,0,0,0.2);
+    margin-top: 12px;
+    padding-bottom: 10px;
+}
+.navbar-right .email-wrapper .email-list li{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+.navbar-right .open.notification-wrapper li:last-child {
+    padding-bottom: 0;
+}
+
+/*==============================================================================
+**      left side bar Styles Starts   
+==============================================================================*/
+.sidebar{
+    float: left;
+    width: 20%; 
+    background-color: #222222;
+    min-height: 1430px
+}
+.sidebar ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    padding: 20px;
+    outline: none;
+}
+.sidebar a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.sidebar span{
+    margin-left: 7px;
+    font-size: 13px;
+}
+.sidebar ul li ul.down-drop{
+    display: none;
+    width:100%;
+    height: auto;
+    transition: all 0.3s ease;
+    border: 1px solid #254525;
+}
+.sidebar ul li ul.down-drop.open{
+    display: block;
+}
+.dropdown-items{
+    display: none;
+}
+.dropdown-items a{
+    font-size: 13px;
+}
+
+/*==============================================================================
+**      Dashboard content Styles Starts   
+==============================================================================*/
+.main-wrapper
+{
+    float: left;
+    padding: 30px 25px;
+    width: 80%;
+}
+.bread-crumbs h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 10px 0;
+    color: #333;
+    font-size: 30px;
+    font-weight: normal;
+}
+.dashboard-text{
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    color: #808080;
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.bread-crumbs small{
+    color: #808080;
+    font-size: 18px;
+    margin-left: 11px;
+}
+.bread-crumbs .sb-admin{
+    background-color: #d9edf7;
+    border: 1px solid #B9D6E4;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.sb-admin p{
+    font-size: 13px;
+    color: #3180B3;
+    display: inline-block;
+}
+.bread-crumbs .sb-admin a{
+    color: #B9D6E4;
+    float: right;
+    font-size: 16px;
+}
+.sbadmin-color{
+    color: #31708F;
+}
+.sbadmin2-color{
+    color: #245269;
+}
+.panel-default {
+    border-color: #ddd;
+}
+.details-wrapper{
+    margin-top: 20px;
+}
+.tiles {
+    width: 235px;
+    display: inline-block;
+    margin-right: 8px;
+}
+.details-wrapper .tiles:last-of-type{
+    margin-right: 0;
+}
+.tiles-heading {
+    border-radius: 3px 3px 0 0;
+    padding: 10px;
+}
+.tiles-heading i{
+    color: #fff;
+    font-size: 70px;
+}
+.tiles-heading span{
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+.tiles-heading p{
+    color: #fff;
+    display: inline-block;
+    float: right;
+    font-size: 40px;
+    text-align: right;
+}
+.tiles-footer{
+    border-radius: 0 0 3px 3px;
+    padding: 10px;
+}
+.tiles-footer a{
+    display: block;
+    outline: medium none;
+    text-decoration: none;
+    font-size: 13px;
+}
+.tiles-footer i{
+    float: right;
+}
+.tiles.primary .tiles-heading{
+    background-color: #337ab7;
+}
+.tiles.success .tiles-heading{
+    background-color: #5CB85C;
+}
+.tiles.warning .tiles-heading{
+    background-color: #F0AD4E;
+}
+.tiles.danger .tiles-heading{
+    background-color: #D9534F;
+}
+.tiles.primary .tiles-footer{
+    border: 1px solid #337ab7;
+}
+.tiles.primary .tiles-footer a{
+    color: #337ab7;
+}
+.tiles.success .tiles-footer{
+    border: 1px solid #5CB85C;
+}
+.tiles.success .tiles-footer a{
+    color: #5CB85C;
+}
+.tiles.warning .tiles-footer{
+    border: 1px solid #F0AD4E;
+}
+.tiles.warning .tiles-footer a{
+    color: #F0AD4E;
+}
+.tiles.danger .tiles-footer{
+    border: 1px solid #D9534F;
+}
+.tiles.danger .tiles-footer a{
+    color: #D9534F;
+}
+
+/*==============================================================================
+**      Area chart Styles Starts   
+==============================================================================*/
+.pannel{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.pannel-heading{
+    background-color: #f5f5f5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.pannel-heading i{
+    color: #333;
+}
+.pannel-heading span{
+    font-size: 14px;
+    color: #333;
+    margin-left: 5px;
+}
+.highcharts{
+    width: 98%;
+} 
+.task-panel-body{
+    padding: 15px 10px;
+}
+.view-pannel.donut-view-pannel {
+    padding: 20px 15px 15px 10px;
+    font-size: 13px;
+}
+.pannel-body ul{
+    border: 1px solid rgba(0,0,0,0.1);
+    list-style-type: none;
+    border-radius: 4px;
+}
+.pannel-body li{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 13px;
+}
+.pannel-body .task-panel i{
+    margin-right: 6px;
+}
+.pannel-body .task-panel li:last-child{
+    border-bottom: none;
+}
+.pannel-body .task-panel  a{
+    text-decoration: none;
+    outline: none;
+}
+.pannel-body .task-panel p{
+    color: #555555;
+    float: left;
+    font-size: 13px;
+    width: 65%;
+}
+.pannel-body .task-panel span{
+    background-color: #777777;
+    border-radius: 10px;
+    color: #fff;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1px 8px;
+}
+.view-pannel{
+    color: #337ab7;
+    float: right;
+    font-size: 13px;
+    padding: 20px 0 15px 10px;
+    text-decoration: none;
+    outline: none;
+}
+.update-wrapper .pannel {
+    float: left;
+    margin: 20px 18px 0 0;
+    width: 32%;
+}
+.update-wrapper .pannel:last-of-type{
+    margin-right: 0;
+}
+.transaction-items{
+    padding: 15px;
+    border-radius: 4px;
+}
+.transaction-table {
+    border-collapse: collapse;
+    min-width: 100%;
+}
+.transaction-table-row td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 7px;
+    font-size: 13px;
+    color: #555;
+}
+.transaction-table-row th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 7px;
+    font-size: 13px;
+    color: #333;
+}
+.transaction-table-row:nth-child(even) {
+    background-color: #F9F9F9;
+}
+svg{
+    margin: 0 auto;
+    display: block;
+}
+/*
+================================================================================
+      Media Styles For The Application      **
+================================================================================
+*/
+
+@media (min-width:1200px){
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .tiles {
+        margin-right: 5px;
+        width: 24%;
+    }
+    .tiles-heading i {
+        font-size: 50px;
+    }
+    .tiles-heading p {
+        font-size: 30px;
+    }
+    .tiles-heading span {
+        font-size: 12px;
+    }
+    .tiles-footer a {
+        font-size: 12px;
+    }
+    .update-wrapper .pannel {
+        width: 32%;
+    }
+    .pannel-body .task-panel p {
+        font-size: 11px;
+        width: 60%;
+    }
+    .update-wrapper .pannel {
+        margin-right: 15px;
+        width: 32%;
+    }
+    .transaction-table {
+        display: block;
+        overflow-x: scroll;
+    }
+    .sidebar {
+        min-height: 1470px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .tiles {
+        float: left;
+        margin-bottom: 15px;
+        width: 48%;
+        margin-right: 21px;
+    }
+    .update-wrapper .pannel {
+        width: 100%;
+    }
+    .sidebar {
+        min-height: 2670px
+    }
+    .sidebar span {
+        font-size: 12px;
+    }
+    .sb-admin p {
+        max-width: 85%;
+    }
+    .tiles.success {
+        margin-right: 0;
+    }
+    tiles.danger{
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .navbar-brand {
+        width: 150px;
+    }
+    .sidebar {
+        width: 30%;
+        min-height: 2690px;
+    }
+    .sidebar a {
+        font-size: 13px;
+        padding: 15px;
+    }
+    .main-wrapper {
+        width: 70%;
+    }
+    .bread-crumbs .sb-admin {
+        font-size: 11px;
+    }
+    .tiles {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .update-wrapper .pannel {
+        width: 100%;
+    }
+    .sb-admin p {
+        max-width: 85%;
+    }
+    .pannel-body .task-panel p {
+        width: 60%;
+    }
+    .bread-crumbs h2 {
+        font-size: 25px;
+    }
+    .bread-crumbs small {
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .main-wrapper {
+        width: 100%;
+    }
+    .email-wrapper > a, .notification-wrapper > a, .profile-wrapper > a {
+        padding: 10px;
+    }
+    .navbar-right .open ul {
+        left: 0;
+        width: 120px;
+        top: 40px;
+    }
+    .navbar-right .open .notification-list a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .navbar-right .open.email-wrapper ul {
+        width: 230px;
+        text-align: left;
+    }
+    .navbar-right .open.email-wrapper li a {
+        padding-left: 70px;
+    }
+    .navbar-right .open.notification-wrapper ul {
+        width: 175px;
+        text-align: left;
+    }
+    .sidebar {
+        display: none;
+    }
+    .navbar-right {
+        float: none;
+        text-align: center;
+    }
+    .navbar-brand {
+        width: 135px;
+    }
+    .tiles {
+        margin-bottom: 15px;
+        margin-right: 0;
+        width: 100%;
+    }
+    .update-wrapper .pannel {
+        width: 100%;
+    }
+    .transaction-table {
+        display: block;
+        overflow-x: auto;
+    }
+    .pannel-body .task-panel p {
+        font-size: 13px;
+        width: 57%;
+    }
+    .pannel-body .task-panel span {
+        padding: 1px 7px;
+    }
+    .sb-admin p {
+        max-width: 80%;
+    }
+    .toggle{
+        background-color: transparent;
+        border: 1px solid #808080;
+        border-radius: 4px;
+        display: block;
+        float: right;
+        margin: 8px 15px;
+        outline: medium none;
+        padding: 5px 6px;
+    }
+    .toggle:hover{
+        background-color: #333;
+        color: #fff;
+    }
+    .menu{
+        display: block;
+    }
+    .sidebar{
+        display: block;
+        height: 340px;
+        min-height: 0;
+        width: 100%;
+        overflow-y: scroll;
+        position: absolute;
+        border-top: 1.2px solid #808080; 
+    }
+    .sidebar a {
+        padding: 15px;
+
+    }
+    .menu > li:first-child {
+        margin-top: 10px;
+    }
+    .profile-list a {
+        text-align: left;
+    }
+    .navbar-right .open.email-wrapper p {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .navbar-right .open.email-wrapper img {
+        left: 15px;
+        height: 40px;
+        width: 40px;
+    }
+
+}
